@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+<script>
+<!-- Each of the JavaScript functions below reveals only one of the junior, senior or orchestra sections. -->
+<!-- This is achieved using display:block and display:none. -->
+<!-- The HTML elements being revealed or hidden are identified using IDs. -->
+
+function displayJC() {
+    document.getElementById("junior").style.display="block";
+	document.getElementById("senior").style.display="none";
+	document.getElementById("orchestra").style.display="none";
+}
+function displaySC() {
+    document.getElementById("junior").style.display="none";
+	document.getElementById("senior").style.display="block";
+	document.getElementById("orchestra").style.display="none";
+}
+function displayO() {
+    document.getElementById("junior").style.display="none";
+	document.getElementById("senior").style.display="none";
+	document.getElementById("orchestra").style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>School Activities</h1>
+<img class="imageBanner" src="../images/activitiesBanner.jpg">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="sport.html">Sport</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="study.html">Study</a></li>
+<li><a href="drama.html">Drama</a></li>
+</ul>
+</nav>
+
+<main>
+<section>
+<h2>Music at Penny High</h2>
+<p>The Music Department provides free tuition to anyone interested in learning an instrument.  Lessons are taken during class time so you'll have to catch up on any work missed.  If you wish to perform in a larger group you may join one of our choirs or ensembles.</p>
+</section>
+
+<section id="newsArticle">
+<p id="highlight"><img class="imageIconLeft" src="../images/newsIcon.png" onMouseOver="document.getElementById('highlight').style.color='darkRed'"><b>Friday 4th May.</b><br>  The Music Department has recently purchased six new electric guitars and practise amplifiers.  These are available for use during most lunchtimes.  Please see one of the Music staff for permission to use the guitars and amps.</p> 
+</section>
+
+<section>
+<p> Click on an option below to find out more about the various performance groups available. <br><br>
+<img class="musicOptions" src="../images/juniorChoirOption.png" onclick="displayJC()">
+<img class="musicOptions" src="../images/seniorChoirOption.png" onclick="displaySC()">
+<img class="musicOptions" src="../images/orchestraOption.png" onclick="displayO()">
+</p>
+</section>
+
+<!-- All three sections below are initially hidden using display:none -->
+<!-- They are revealed as the user clicks on the above graphics -->
+<section id="junior" style="display:none;height:100px">
+<img class="largeImages" src="../images/juniorChoir.jpg">
+<p><b>Junior Choir</b><br>The junior meet every Monday lunchtime.  It is open to anyone from S1 to S3.</p>
+</section>
+<section id="senior" style="display:none;height:100px">
+<img class="largeImages" src="../images/seniorChoir.jpg">
+<p><b>Senior Choir</b><br>The senior choir meet every Friday after school.  It is open to anyone from S4 to S6. The senior choir has recently won several prestigious choir competitions.</p>
+</section>
+<section id="orchestra" style="display:none;height:100px">
+<img class="largeImages" src="../images/orchestra.jpg">
+<p><b>Orchestra</b><br>The orchestra is not age limited, it is open to anyone who plays their instrument at grade 3 level or higher.</p>
+</section> 
+
+</main>
+
+<footer>
+<h3>Contact Us</h3>
+<ul>
+<li>Landline</li>
+<li>Mobile</li>
+<li>E-mail</li>
+</ul>
+<ul>
+<li>01314449999</li>
+<li>0797575364</li>
+<li>penny.high@midlands.gov.uk</li>
+</ul>
+</footer>
+
+</body>
+</html>

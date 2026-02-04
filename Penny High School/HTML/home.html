@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+
+<!-- Two JavaScript functions that change the size of an image when called. -->
+<script>
+
+<!-- displayLarger is called onmouseover -->
+<!-- To change the height and width of the correct image it must be identified.  This is done by passing the parameter "this". -->
+function displayLarger(my_image) 
+{my_image.style.width='150px';
+my_image.style.height='150px';}
+
+<!-- displaySmaller is called onmouseout -->
+function displaySmaller(my_image) 
+{my_image.style.width='100px';
+my_image.style.height='100px';}
+</script>
+
+</head>
+<body>
+
+<header>
+<!-- The h1 and img elements are positioned side by side using float and display. -->
+<!-- float:right is applied to the banner image as part of the imageBanner class. -->
+<!-- The h1 element is given the style display:inline to ensure it only takes up the width of the text. If this were set to display:block the heading would take up the width of the page, forcing the graphic to sit below it.-->
+<h1>School Activities</h1>
+<img class="imageBanner" src="../images/activitiesBanner.jpg">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="sport.html">Sport</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="study.html">Study</a></li>
+<li><a href="drama.html">Drama</a></li>
+</ul>
+</nav>
+
+<main>
+<section>
+<h2>Variety is the Spice of Life</h2>
+<p>Different activities in life develop different skills.  Penny High School offers a variety of after school activities including many sports, music clubs, study clubs and drama performance.  It is our hope that you will attend as many clubs as you can, with as much variety as possible.</p>
+</section>
+
+
+<section id="newsArticle">
+<!-- A mouse over JavaScript event is used to change the style of the news text to red: style.color='darkRed'. --> 
+<!-- The target is identified using "this" meaning 'this paragraph element'. -->
+<p onMouseOver="this.style.color='darkRed'"><img class="imageIconLeft" src="../images/newsIcon.png" >Wednesday 12th June.<br>  The Computing Science Department are launching a Code Club after school next Tuesday. If you are interested in improving your problem solving skills, learning a new programming language or wish to discuss careers in programming please meet in Room B9.  </p>
+</section>
+
+
+<section>
+<!-- To make an image get larger and smaller with mouse -->
+<!-- Javascript can be embedded within the element -->
+<img class="normalImage" src="../images/hockey.jpg" onMouseOver="this.style.width='150px';this.style.height='150px'" onMouseOut="this.style.width='100px';this.style.height='100px'">
+
+<!-- or a function can be called to achieve the same task. -->
+<img class="normalImage" src="../images/guitar.jpg" onMouseOver="displayLarger(this)" onMouseOut="displaySmaller(this)">  
+<img class="normalImage" src="../images/drama.jpg" onMouseOver="displayLarger(this)" onMouseOut="displaySmaller(this)">
+<img class="normalImage" src="../images/study.jpg" onMouseOver="displayLarger(this)" onMouseOut="displaySmaller(this)">
+<img class="normalImage" src="../images/rugby.jpg" onMouseOver="displayLarger(this)" onMouseOut="displaySmaller(this)">
+<img class="normalImage" src="../images/windBand.jpg" onMouseOver="displayLarger(this)" onMouseOut="displaySmaller(this)">
+</section>
+</main>
+
+<footer>
+<h3>Contact Us</h3>
+<ul>
+<li>Landline</li>
+<li>Mobile</li>
+<li>E-mail</li>
+</ul>
+<ul>
+<li>01314449999</li>
+<li>0797575364</li>
+<li>penny.high@midlands.gov.uk</li>
+</ul>
+</footer>
+
+</body>
+</html>

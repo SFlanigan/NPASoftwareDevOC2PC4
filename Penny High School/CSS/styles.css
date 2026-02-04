@@ -1,0 +1,68 @@
+/* The Universal Selector * is not part of the Higher course */
+/* It has been used here to cancel the browser default margins and */
+/* padding for every page element.  This ensures that only assigned */
+/* margin and padding values are implemented when viewing pages. */
+* {margin:0;padding:0}
+
+/* Margins - main page areas */
+header, nav, main, footer  {margin-top:5px}   /* grouping selectors (with a comma) may be used to reduce the amount of code */
+body{margin:auto}
+
+/* Margins - sub page areas used for Content */
+section {margin-bottom:5px}
+div {margin-top:5px}
+p {margin-top:15px;margin-bottom:15px}
+h3 {margin-bottom:10px}
+
+/* Padding */
+header, div, main, footer, section {padding:10px}
+
+/* Positioning (Float, Display and Clear) */
+header, nav, main, footer {display:block;clear:both}
+header h1 {display:inline}
+.hidden{display:none}
+
+/* Element Sizes */
+body{width:800px}
+header {height:80px}
+footer {height:60px}
+nav {height:35px}
+
+/* Background Colours */
+body{background-color:LightBlue}
+header, footer, div {background-color:White}
+nav, main {background-color:#dddddd}    /* light grey using hex rgb value */
+main  section  {background-color:White}
+
+/* Text Properties */
+h1, h2, h3, p{font-family:Helvetica;text-align:left;color:Black}
+h1 {font-size:30pt}
+h2 {font-size:16pt}
+h3, p, ul {font-size:12pt}
+
+/* Navigation List Properties */
+/* Child selectors 'nav ul' are used to ensure that only the unordered list elements within the nav element are styles */
+nav ul {list-style-type:none}
+nav ul li {float:left;width:80px;text-align:center}
+nav ul li a {display:block;padding:8px}
+nav ul li a:hover {background-color:#000;color:White}
+
+/* Contacts List Properties */
+footer ul {list-style-type:none;clear:both}
+footer ul li {float:left;width:150px;text-align:left;font-size:10pt}
+
+/* IDs */
+#newsArticle{background-color:#ddd;height:100px}   /* light grey using abbreviated hex rgb value */
+
+/* Image Classes */
+/* Used to control the size, position and margins around a variety of graphics throughout the website */
+.normalImage {width:100px;height:100px;display:inline;margin-top:20px}	
+.imageBanner {width:200px;height:80px;float:right}
+.imageIconLeft {width:80px;height:80px;float:left;margin-right:10px}
+.imageIconRight {width:60px;height:90px;float:right;margin-left:10px;margin-bottom:10px}
+.largeImages {width:200px;height:80px;float:left;margin-right:15px}
+.sportImage {width:200px;height:200px;display:inline}
+.imageStudy {width:140px;height:90px;display:inline;margin-right:50px}
+.musicOptions {display:inline;margin-right:10px}
+.reveal {display:block;margin-top:10px;margin-bottom:10px}
+}

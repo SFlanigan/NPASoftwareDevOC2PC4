@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drama</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+</head>
+
+<body>
+
+<header>
+<h1>School Activities</h1>
+<img class="imageBanner" src="../images/activitiesBanner.jpg">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="sport.html">Sport</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="study.html">Study</a></li>
+<li><a href="drama.html">Drama</a></li>
+</ul>
+</nav>
+
+<main>
+<!-- Example of an inline style used to override the external CSS styles. -->
+<!-- It would be better practice however to implement this as an ID. -->
+<div style="float:left;width:300px">
+<h2>Drama Opportunities</h2>
+<p><img class="imageIconRight" src="../images/curiousIncident.png">The Drama Department offer a variety of after school activities covering different acting experiences.  These include groups on Shakespeare, improvisation and play writing.  These clubs are used to prepare participants for the annual school show which is presented in collaboration with the Music Department.  There are also several annual visits to local performances of plays and musicals.</p><p>If you wish to put your name down for a Drama Department visit to a performance please fill in the form on the right:</p>
+</div>
+
+<div style="margin-left:330px;margin-top:5px">
+<!-- The large left hand margin above is used in conjunction with float:left to create an aesthetic gap between the two <div> elements.  Without the large margin the element would still float but it would position itself hard against the other division element -->
+
+<form action="">
+
+  First name:<br>
+  <input type="text" name="firstname" size="30" maxlength="15" required>
+  <br>
+  
+  Last name:<br>
+  <input type="text" name="lastname" size="30" maxlength="15" required>
+  <br><br>
+  
+  Select play:
+  <select name="play">
+    <option value="hamlet">Hamlet</option>
+    <option value="godo">Waiting for Godo</option>
+    <option value="brothers">Blood Brothers</option>
+    <option value="curious">Curious Incident</option>
+  </select>
+  <br><br>
+  
+  Number of Tickets Required (between 1 and 3):
+  <input type="number" name="tickets" value="1" min="1" max="3">
+  <br><br>
+  
+  Choose your age:<br>
+  <input type="radio" name="age" value="12 to 14" checked> 12-14
+  <input type="radio" name="age" value="15 or 16"> 15,16
+  <input type="radio" name="age" value="17 or over"> over 16
+
+  <br><br>
+  
+  If required, please delete and state any special requirements:
+  <textarea name="message" rows="3" cols="50">none</textarea>
+  <br><br>
+  
+  <input type="submit" onclick="alert('Form Entered')" value="Submit">
+</form> 
+</div>
+
+
+<section style="clear:both" id="newsArticle">
+<p id="highlight" style="clear:both"><img class="imageIconLeft" src="../images/newsIcon.png" onMouseOver="document.getElementById('highlight').style.color='darkRed'"><b>Thursday 13th June.</b><br>  The Drama Department are organising a trip to see "The Curious Incident of the Dog in the Night-Time". Please complete the form above to enter your name for this outing or other upcoming events.</p> 
+</section>
+
+</main>
+
+<footer>
+<h3>Contact Us</h3>
+<ul>
+<li>Landline</li>
+<li>Mobile</li>
+<li>E-mail</li>
+</ul>
+<ul>
+<li>01314449999</li>
+<li>0797575364</li>
+<li>penny.high@midlands.gov.uk</li>
+</ul>
+</footer>
+
+</body>
+</html>

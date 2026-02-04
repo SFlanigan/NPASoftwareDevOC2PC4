@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Study</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+</head>
+<body>
+
+<header>
+<h1>School Activities</h1>
+<img class="imageBanner" src="../images/activitiesBanner.jpg">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="sport.html">Sport</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="study.html">Study</a></li>
+<li><a href="drama.html">Drama</a></li>
+</ul>
+</nav>
+
+<main>
+<section>
+<h2>The Importance of Study</h2>
+<p>Studying outside of the classroom is as important as the work you complete in class.  It allows you to consolidate what you have learned and understand any weakness you may have in your knowledge or skills.  Study groups offer you the additional time required to address these weaknesses through peer discussion or extended one-to-one time with a member of staff, often not possible in a classroom.</p>
+</section>
+
+<section>
+<p id="highlight"><img class="imageIconLeft" src="../images/newsIcon.png" onMouseOver="document.getElementById('highlight').style.color='darkRed'"><b>Thursday 13th June.</b><br>  The guidance team will be running a 'study skills' seminar for all S4 to S6 pupils after school on Thursday 20th June.  The purpose of this course is to help students find a method of study that suits them.</p> 
+</section>
+
+<section>
+
+<header>
+<h2>Learn more about study techniques</h2>
+<p>Hover your mouse over the images below or take the study quiz: <a href="studyQuiz.html">Quiz</a> </p>
+</header>
+
+<!-- JavaScript events may be used to write HTML to an element identified by its ID -->
+<!-- Each of the graphics below contains a mouse over event that uses .innerHTML to write some text to the paragraph element below the graphics, id="study1" -->
+
+<img class="imageStudy" src="../images/visualLearner.png" onMouseOver="document.getElementById('study1').innerHTML = 'If you find it easy to remember visual things like charts and diagrams, you are probably a visual learner.<br>Useful tips for visual learners include:<br>Write down key concepts on pieces of paper.<br>Create coloured mind-maps to highlight important things.<br>Colour-code your notes.<br>Draw diagrams and sketches to help you to remember points.'">
+
+<img class="imageStudy" src="../images/kinaestheticLearner.png" onMouseOver="document.getElementById('study1').innerHTML = 'Kinaesthetic people like to learn by doing things.<br>For example:<br>If you were learning to program a computer you would rather do it and learn through trial and error than read a book about it.<br>If you are asked to study a particular Chemistry experiment you would learn best by doing the experiment and experiencing it first hand.'">
+
+<img class="imageStudy" src="../images/auditoryLearner.png" onMouseOver="document.getElementById('study1').innerHTML = 'If you are an auditory learner, you will prefer to hear the topics that you are studying:<br>Try reading your notes out loud.<br>Record yourself reading the key points in your notes then listen back to the recording. This can be done with most smart phones and some mp3 players.<br>Revise with other students by discussing the topics you are studying.'">
+
+<!-- Target paragraph 'study1'.  The mouse over events in the above image insert HTML into this element -->
+<p id="study1"> </p>
+
+</section>
+</main>
+
+<footer>
+<h3>Contact Us</h3>
+<ul>
+<li>Landline</li>
+<li>Mobile</li>
+<li>E-mail</li>
+</ul>
+<ul>
+<li>01314449999</li>
+<li>0797575364</li>
+<li>penny.high@midlands.gov.uk</li>
+</ul>
+</footer>
+
+</body>
+</html>

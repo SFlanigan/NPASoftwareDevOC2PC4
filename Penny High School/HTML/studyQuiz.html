@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Study Quiz</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+<script>
+function displayLarger(revealedElement) 
+{document.getElementById(revealedElement).style.display='block';}
+</script>
+
+</head>
+<body>
+
+<header>
+<h1>School Activities</h1>
+<img class="imageBanner" src="../images/activitiesBanner.jpg">
+</header>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="sport.html">Sport</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="study.html">Study</a></li>
+<li><a href="drama.html">Drama</a></li>
+</ul>
+</nav>
+
+<main>
+
+<h2>How healthy are your study practices?</h2>
+<p>Read each of the statements below and think how it applies to you.  When you have considered your answer click reveal.</p>
+
+
+
+<p> Q1 - Do you make notes or draw diagrams when studying? </p>
+ 
+<!- The reveal graphic contains an inline JavaScript event which reveals the advice below –>
+<img class="reveal" src="../images/reveal.png" onClick="document.getElementById('reveal1').style.display='block'">  
+<p id="reveal1" class="hidden"> Research shows that a very small percentage of people memorise knowledge simply by reading it.  Most people learn more effectively when they write something out in their own words or produce graphical representations of their knowledge such as mind-maps.</p>
+
+
+<p> Q2 - What is the last activity you do before you go to sleep? </p>
+ 
+<!- The reveal graphic contains an inline JavaScript event which reveals the advice below –>
+<img class="reveal" src="../images/reveal.png" onClick="document.getElementById('reveal2').style.display='block'">  
+<p id="reveal2" class="hidden"> A good night's sleep will help your ability to concentrate in class and during revision.  Recent scientific studies have shown that the light emitted from TV, tablet and phone screens confuses our brains into thinking it's daytime.  If this is the last thing you do before you try and sleep you may find it harder to nod off.</p>
+
+
+<p> Q3 - How many days before a test do you start revising? </p>
+ 
+<!- The reveal graphic contains an inline JavaScript event which reveals the advice below –>
+<img class="reveal" src="../images/reveal.png" onClick="document.getElementById('reveal3').style.display='block'">  
+<p id="reveal3" class="hidden"> Constantly reinforcing your knowledge will have a significantly greater effect on your progress than a last minute cram before an exam.  Ensure you study regularly and do not leave revision until the last moment.</p>
+
+</main>
+
+<footer>
+<h3>Contact Us</h3>
+<ul>
+<li>Landline</li>
+<li>Mobile</li>
+<li>E-mail</li>
+</ul>
+<ul>
+<li>01314449999</li>
+<li>0797575364</li>
+<li>penny.high@midlands.gov.uk</li>
+</ul>
+</footer>
+
+</body>
+</html>
